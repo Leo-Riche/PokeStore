@@ -407,6 +407,16 @@ p.steel {
     cursor: pointer;
 }
 
+.emptyMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    font-size: 2rem;
+}
+
 .mainPanier {
     display: flex;
     flex-direction: column;
