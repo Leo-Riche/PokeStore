@@ -150,7 +150,7 @@ button.addEventListener('click', () => {
     
 });
 
-fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
+fetch('https://pokeapi.co/api/v2/pokemon?limit=1302')
     .then((response) => response.json())
     .then((data) => {
     data.results.forEach((pokemon) => {
