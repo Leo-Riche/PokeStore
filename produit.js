@@ -6,11 +6,12 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
         const body = document.querySelector('body');
         const color = data.types[0].type.name;
         const pokemonName = document.querySelector('.pokemonName');
+        const pokemonIdText = document.querySelector('.pokemonId');
         const pokemonImg = document.querySelector('.pokemonImg');
         const pokemonImage1 = document.querySelector('.pokemonImage1');
         const pokemonImage2 = document.querySelector('.pokemonImage2');
         const pokemonImage3 = document.querySelector('.pokemonImage3');
-        const pokemonType = document.querySelector('.pokemonType');
+        const pokemonType = document.querySelector('.pokemonTypes');
         const pokemonType1 = document.querySelector('.pokemonType1');
         const pokemonTypeColor = data.types[0].type.name;
         const pokemonHeight = document.querySelector('.height');
@@ -20,6 +21,7 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
 
         body.classList.add(color);
         pokemonName.textContent = data.name;
+        pokemonIdText.textContent = `#` + data.id;
         pokemonImg.src = data.sprites.front_default;
         pokemonImg.alt = `Image : ` + data.name;
         pokemonImage1.src = data.sprites.back_default;

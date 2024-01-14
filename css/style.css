@@ -39,6 +39,7 @@ h1 {
     font-weight: 500;
     text-align: center;
     padding-block: 50px;
+    padding-inline: 24px;
 }
 
 #Filtre {
@@ -353,6 +354,7 @@ p.steel {
 .pokemonType {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
     width: 100%;
 }
@@ -365,6 +367,7 @@ p.steel {
 .pokemonTypes {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 20px;
 }
 
